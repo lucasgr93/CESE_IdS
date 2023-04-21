@@ -31,7 +31,7 @@ gpio_t gpioAllocate(void)
 	return result;
 }
 
-gpio_t gpioCreate(uint8_t port, uint8_t pin, bool output)
+gpio_t gpioCreate(uint8_t port, uint8_t pin, bool output, bool inverted)
 {
 	#ifdef STATIC
 	gpioAllocate();
